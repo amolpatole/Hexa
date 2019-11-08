@@ -1,0 +1,14 @@
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Release\netcoreapp2.2\win10-x64\hostpolicy.dll
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Release\netcoreapp2.2\win10-x64\hostfxr.dll
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Release\netcoreapp2.2\win10-x64\CoreConsoleMVCApp.exe
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Release\netcoreapp2.2\win10-x64\CoreConsoleMVCApp.deps.json
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Release\netcoreapp2.2\win10-x64\CoreConsoleMVCApp.runtimeconfig.json
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Release\netcoreapp2.2\win10-x64\CoreConsoleMVCApp.runtimeconfig.dev.json
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Release\netcoreapp2.2\win10-x64\CoreConsoleMVCApp.dll
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Release\netcoreapp2.2\win10-x64\CoreConsoleMVCApp.pdb
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\obj\Release\netcoreapp2.2\win10-x64\CoreConsoleMVCApp.csprojAssemblyReference.cache
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\obj\Release\netcoreapp2.2\win10-x64\CoreConsoleMVCApp.csproj.CoreCompileInputs.cache
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\obj\Release\netcoreapp2.2\win10-x64\CoreConsoleMVCApp.AssemblyInfoInputs.cache
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\obj\Release\netcoreapp2.2\win10-x64\CoreConsoleMVCApp.AssemblyInfo.cs
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\obj\Release\netcoreapp2.2\win10-x64\CoreConsoleMVCApp.dll
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\obj\Release\netcoreapp2.2\win10-x64\CoreConsoleMVCApp.pdb

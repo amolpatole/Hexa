@@ -1,0 +1,11 @@
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Debug\netcoreapp2.2\CoreConsoleMVCApp.deps.json
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Debug\netcoreapp2.2\CoreConsoleMVCApp.runtimeconfig.json
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Debug\netcoreapp2.2\CoreConsoleMVCApp.runtimeconfig.dev.json
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Debug\netcoreapp2.2\CoreConsoleMVCApp.dll
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\bin\Debug\netcoreapp2.2\CoreConsoleMVCApp.pdb
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\obj\Debug\netcoreapp2.2\CoreConsoleMVCApp.csprojAssemblyReference.cache
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\obj\Debug\netcoreapp2.2\CoreConsoleMVCApp.csproj.CoreCompileInputs.cache
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\obj\Debug\netcoreapp2.2\CoreConsoleMVCApp.AssemblyInfoInputs.cache
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\obj\Debug\netcoreapp2.2\CoreConsoleMVCApp.AssemblyInfo.cs
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\obj\Debug\netcoreapp2.2\CoreConsoleMVCApp.dll
+C:\Users\r1m1nrao\source\repos\CoreConsoleMVCApp\obj\Debug\netcoreapp2.2\CoreConsoleMVCApp.pdb

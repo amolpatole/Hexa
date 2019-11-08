@@ -1,0 +1,14 @@
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\bin\Debug\netcoreapp2.2\MiddlewareDemo.deps.json
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\bin\Debug\netcoreapp2.2\MiddlewareDemo.runtimeconfig.json
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\bin\Debug\netcoreapp2.2\MiddlewareDemo.runtimeconfig.dev.json
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\bin\Debug\netcoreapp2.2\MiddlewareDemo.dll
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\bin\Debug\netcoreapp2.2\MiddlewareDemo.pdb
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\obj\Debug\netcoreapp2.2\MiddlewareDemo.csprojAssemblyReference.cache
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\obj\Debug\netcoreapp2.2\MiddlewareDemo.csproj.CoreCompileInputs.cache
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\obj\Debug\netcoreapp2.2\MiddlewareDemo.RazorAssemblyInfo.cache
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\obj\Debug\netcoreapp2.2\MiddlewareDemo.RazorAssemblyInfo.cs
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\obj\Debug\netcoreapp2.2\MiddlewareDemo.AssemblyInfoInputs.cache
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\obj\Debug\netcoreapp2.2\MiddlewareDemo.AssemblyInfo.cs
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\obj\Debug\netcoreapp2.2\MiddlewareDemo.RazorTargetAssemblyInfo.cache
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\obj\Debug\netcoreapp2.2\MiddlewareDemo.dll
+C:\Users\r1m1nrao\source\repos\MiddlewareDemo\obj\Debug\netcoreapp2.2\MiddlewareDemo.pdb

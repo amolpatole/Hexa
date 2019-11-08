@@ -1,0 +1,71 @@
+<p>home works!</p>
+
+<h3>{{name | reverseNumOrText}}</h3>
+
+<h3>{{name | uppercase}}</h3>
+
+<h3>{{name | titlecase}}</h3>
+
+<h3>{{today | date:'dd-MM-yyyy'}}</h3>
+
+<h3>{{products | json}}</h3>
+
+User is : <span *ngIf="isMarried">Married</span> <span *ngIf="!isMarried">UnMarried</span>
+<input type="checkbox" [checked]="isMarried" [value]="isMarried" (click)="toggleMarried()">
+
+<input type="text" [value]="isMarried">
+
+<p [ngStyle]="{'fontSize.px':size, 'color':colorCode}">Hello Testing dirictiver</p>
+<p>{{size}}</p>
+<input type="range" [value]="size" min="10" max="100" #sizeCtrl (change)="updateFont(sizeCtrl)">
+
+
+<p [ngStyle]="{'color':colorCode}">Hello Testing dirictiver Color</p>
+<input type="color" [value]="colorCode" min="10" max="100" #colorCtrl (change)="updateColor(colorCtrl)">
+<p>{{colorCode}}</p>
+
+
+<div *ngIf="products.length > 0; else nocontent">
+
+    <table border="1">
+        <tr>
+            <th>Sr.No</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Availablity</th>
+        </tr>
+        <tr *ngFor="let item of products; index as i"
+            [ngClass]="{'myLower': item.price <= 100, 'myHigher': item.price > 100}">
+            <td>{{i + 1}}</td>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.price | currency:'INR':true:'5.2-3'}}</td>
+            <td>{{item.quantity | number:'0.2-3'}}</td>
+            <td>{{item.quantity | availablity}}</td>
+        </tr>
+        <hr />
+        <ng-container *ngFor="let item of products; index as i">
+            <tr *ngIf="item.price <= 100" [ngClass]="{'myLower': item.price <= 100, 'myHigher': item.price > 100}">
+                <td>{{i + 1}}</td>
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.quantity}}</td>
+                <td>{{item.quantity | availablity}}</td>
+            </tr>
+        </ng-container>
+    </table>
+
+</div>
+
+<ng-template #nocontent>
+    <p>Not item found...</p>
+</ng-template>
+
+<ul>
+    <li *ngFor="let item of products;">
+        {{item.name}}
+    </li>
+</ul>

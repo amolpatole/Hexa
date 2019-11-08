@@ -1,0 +1,96 @@
+<div class="row">
+    <div class="col-md-6 col-lg-4 mx-auto">
+        <h2>Add Product</h2>
+        <form action="" method="post" #form="ngForm" (submit)="save(form)">
+            <div class="alert alert-danger" *ngIf="formStatus.submitted && !formStatus.valid">
+                Failed to save...
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" [(ngModel)]="product.name" #name="ngModel" required
+                    minlength="3" />
+                <div *ngIf="name.invalid && name.touched">
+                    <div class="text-danger" *ngIf="name.errors && name.errors.required ">Name cannot empty</div>
+                    <div class="text-danger" *ngIf="name.errors && name.errors.minlength ">Min 3 char required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Brand</label>
+                <input type="text" class="form-control" name="brand" [(ngModel)]="product.brand" #brand="ngModel"
+                    required />
+                <div *ngIf="brand.invalid && brand.touched">
+                    <div class="text-danger" *ngIf="brand.errors && brand.errors.required ">Brand cannot empty</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Price</label>
+                <input type="number" class="form-control" name="price" [(ngModel)]="product.price" #price="ngModel"
+                    min="1" required />
+                <div *ngIf="price.invalid && price.touched">
+                    <div class="text-danger" *ngIf="price.errors && price.errors.required ">Price cannot empty</div>
+                    <div class="text-danger" *ngIf="price.errors && price.errors.minlength ">Min 1 number required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Quantity</label>
+                <input type="number" class="form-control" name="quantity" [(ngModel)]="product.quantity"
+                    #quantity="ngModel" min="1" max="10000" required />
+                <div *ngIf="quantity.invalid && quantity.touched">
+                    <div class="text-danger" *ngIf="quantity.errors && quantity.errors.required ">Quantity cannot empty
+                    </div>
+                    <div class="text-danger" *ngIf="quantity.errors && quantity.errors.minlength ">Min 1 number required
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Manufacturing Date</label>
+                <input type="date" class="form-control" name="manufacturingDate" [(ngModel)]="product.manufacturingDate"
+                    #manufacturingDate="ngModel" required />
+                <div *ngIf="manufacturingDate.invalid && manufacturingDate.touched">
+                    <div class="text-danger" *ngIf="manufacturingDate.errors && manufacturingDate.errors.required ">
+                        ManufacturingDate cannot empty
+                    </div>
+                    <div class="text-danger" *ngIf="manufacturingDate.errors && manufacturingDate.errors.minlength ">Min
+                        1 number required
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Reorder Level</label>
+                <input type="number" class="form-control" name="reorderLevel" [(ngModel)]="product.reorderLevel"
+                    #reorderLevel="ngModel" min="1" max="10" required />
+            </div>
+            <div class="form-group">
+                <label for="name">Tax Rate</label>
+                <input type="number" class="form-control" name="taxRate" [(ngModel)]="product.taxRate"
+                    #taxRate="ngModel" min="1" max="100" required />
+                <div *ngIf="taxRate.invalid && taxRate.touched">
+                    <div class="text-danger" *ngIf="taxRate.errors && taxRate.errors.required ">TaxRate cannot empty
+                    </div>
+                    <div class="text-danger" *ngIf="taxRate.errors && taxRate.errors.minlength ">Min 1 number required
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Image Url/Name</label>
+                <input type="text" class="form-control" name="imageUrl" [(ngModel)]="product.imageUrl"
+                    #imageUrl="ngModel" required />
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select name="category" [(ngModel)]="product.categoryId" #categorye="ngModel" required>
+                    <option [ngValue]="undefined" desabled>--Select Category--</option>
+                    <option *ngFor="let item of categories|async" [ngValue]="item.id">{{item.name}}</option>
+                </select>
+                <div *ngIf="categorye.invalid && categorye.touched">
+                    <div class="text-danger" *ngIf="categorye.errors && categorye.errors.required ">Category cannot empty
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" [disabled]="form.invalid">ADD</button>
+
+        </form>
+    </div>
+</div>

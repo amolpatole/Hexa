@@ -1,0 +1,14 @@
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\bin\Debug\netcoreapp2.2\CatelogMicroAPI.deps.json
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\bin\Debug\netcoreapp2.2\CatelogMicroAPI.runtimeconfig.json
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\bin\Debug\netcoreapp2.2\CatelogMicroAPI.runtimeconfig.dev.json
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\bin\Debug\netcoreapp2.2\CatelogMicroAPI.dll
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\obj\Debug\netcoreapp2.2\CatelogMicroAPI.csproj.CoreCompileInputs.cache
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\obj\Debug\netcoreapp2.2\CatelogMicroAPI.RazorAssemblyInfo.cache
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\obj\Debug\netcoreapp2.2\CatelogMicroAPI.RazorAssemblyInfo.cs
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\obj\Debug\netcoreapp2.2\CatelogMicroAPI.AssemblyInfoInputs.cache
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\obj\Debug\netcoreapp2.2\CatelogMicroAPI.AssemblyInfo.cs
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\obj\Debug\netcoreapp2.2\CatelogMicroAPI.RazorTargetAssemblyInfo.cache
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\bin\Debug\netcoreapp2.2\CatelogMicroAPI.pdb
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\obj\Debug\netcoreapp2.2\CatelogMicroAPI.dll
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\obj\Debug\netcoreapp2.2\CatelogMicroAPI.pdb
+C:\Users\r1m1nrao\source\repos\MicroServices\CatelogMicroAPI\obj\Debug\netcoreapp2.2\CatelogMicroAPI.csprojAssemblyReference.cache
