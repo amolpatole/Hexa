@@ -1,0 +1,26 @@
+<h4 class="text-secondary" style="padding-top: 10px;">Events</h4>
+
+<hr />
+<div class="row">
+    <div class="col-md-3 col-sm-6" style="margin-bottom: 15px;">
+        <a type="button" class="btn btn-primary" routerLink="/addEvent">Add Event</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3 col-sm-6" *ngFor="let item of events|async">
+        <div class="card" style="margin-bottom:20px; height:300px; padding:5px">
+            <div class="titleHeading text-light bg-info" style="padding: 10px;">
+                {{item.title}}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{item.organizer}}</h5>
+                <p class="card-text">{{item.speaker}}</p>
+                <p class="card-text">{{item.startDate}} To {{item.endDate}}</p>
+                <p class="card-text">Register On:
+                    <a href="{{item.registrationUrl}}">{{item.registrationUrl}}</a>
+                </p>
+            </div>
+            <a type="button" class="btn btn-primary" [routerLink]="['editEvent', item.id]">Edit Event</a>
+        </div>
+    </div>
+</div>

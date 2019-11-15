@@ -1,0 +1,92 @@
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <h2>Add Event</h2>
+        <form method="POST" #form="ngForm" (submit)="saveEvent(form)">
+            <div class="alert alert-danger" *ngIf="formStatus.submitted && !formStatus.valid">
+                Failed to save...
+            </div>
+            <div class="form-group">
+                <label for="title">Event Title</label>
+                <input type="text" class="form-control" name="title" [(ngModel)]="events.title" #title="ngModel"
+                    required />
+                <div *ngIf="title.invalid && (title.dirty || title.touched)">
+                    <div class="text-danger" *ngIf="title.errors && title.errors.required">Title can not empty</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title">Speaker</label>
+                <input type="text" class="form-control" name="speaker" [(ngModel)]="events.speaker" #speaker="ngModel"
+                    required />
+                <div *ngIf="speaker.invalid && (speaker.dirty || speaker.touched)">
+                    <div class="text-danger" *ngIf="speaker.errors && speaker.errors.required">Speaker name can not
+                        empty</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title">Start Date</label>
+                <input type="date" class="form-control" name="startDate" [(ngModel)]="events.startDate"
+                    #startDate="ngModel" required />
+                <div *ngIf="startDate.invalid && (startDate.dirty || startDate.touched)">
+                    <div class="text-danger" *ngIf="startDate.errors && startDate.errors.required">Start Date name can
+                        not empty</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title">End Date</label>
+                <input type="date" class="form-control" name="endDate" [(ngModel)]="events.endDate" #endDate="ngModel"
+                    required />
+                <div *ngIf="endDate.invalid && (endDate.dirty || endDate.touched)">
+                    <div class="text-danger" *ngIf="endDate.errors && endDate.errors.required">End Date name can not
+                        empty</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title">Location</label>
+                <input type="text" class="form-control" name="location" [(ngModel)]="events.location"
+                    #location="ngModel" required />
+                <div *ngIf="location.invalid && (location.dirty || location.touched)">
+                    <div class="text-danger" *ngIf="location.errors && location.errors.required">Location name can not
+                        empty</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title">Registration Url</label>
+                <input type="text" class="form-control" name="registrationUrl" [(ngModel)]="events.registrationUrl"
+                    #registrationUrl="ngModel" required />
+                <div *ngIf="registrationUrl.invalid && (registrationUrl.dirty || registrationUrl.touched)">
+                    <div class="text-danger" *ngIf="registrationUrl.errors && registrationUrl.errors.required">
+                        RegistrationUrl name can not empty</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title">Organizer Name</label>
+                <input type="text" class="form-control" name="organizer" [(ngModel)]="events.organizer"
+                    #organizer="ngModel" required />
+                <div *ngIf="organizer.invalid && (organizer.dirty || organizer.touched)">
+                    <div class="text-danger" *ngIf="organizer.errors && organizer.errors.required">Organizer name can
+                        not empty</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title">Start Time</label>
+                <input type="text" class="form-control" name="startTime" [(ngModel)]="events.startTime"
+                    #startTime="ngModel" required />
+                <div *ngIf="startTime.invalid && (startTime.dirty || startTime.touched)">
+                    <div class="text-danger" *ngIf="startTime.errors && startTime.errors.required">StartTime name can
+                        not empty</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title">End Time</label>
+                <input type="text" class="form-control" name="endTime" [(ngModel)]="events.endTime" #endTime="ngModel"
+                    required />
+                <div *ngIf="endTime.invalid && (endTime.dirty || endTime.touched)">
+                    <div class="text-danger" *ngIf="endTime.errors && endTime.errors.required">End Time name can not
+                        empty</div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">SAVE</button> |
+            <button type="button" class="btn btn-primary" routerLink="/">Close</button>
+        </form>
+    </div>
+</div>
