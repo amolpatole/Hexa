@@ -1,0 +1,11 @@
+C:\Users\r1m1nrao\Documents\Training_Project\DOTNETCore\SampleCoreApp\bin\Debug\netcoreapp2.2\SampleCoreApp.deps.json
+C:\Users\r1m1nrao\Documents\Training_Project\DOTNETCore\SampleCoreApp\bin\Debug\netcoreapp2.2\SampleCoreApp.runtimeconfig.json
+C:\Users\r1m1nrao\Documents\Training_Project\DOTNETCore\SampleCoreApp\bin\Debug\netcoreapp2.2\SampleCoreApp.runtimeconfig.dev.json
+C:\Users\r1m1nrao\Documents\Training_Project\DOTNETCore\SampleCoreApp\bin\Debug\netcoreapp2.2\SampleCoreApp.dll
+C:\Users\r1m1nrao\Documents\Training_Project\DOTNETCore\SampleCoreApp\bin\Debug\netcoreapp2.2\SampleCoreApp.pdb
+C:\Users\r1m1nrao\Documents\Training_Project\DOTNETCore\SampleCoreApp\obj\Debug\netcoreapp2.2\SampleCoreApp.csprojAssemblyReference.cache
+C:\Users\r1m1nrao\Documents\Training_Project\DOTNETCore\SampleCoreApp\obj\Debug\netcoreapp2.2\SampleCoreApp.csproj.CoreCompileInputs.cache
+C:\Users\r1m1nrao\Documents\Training_Project\DOTNETCore\SampleCoreApp\obj\Debug\netcoreapp2.2\SampleCoreApp.AssemblyInfoInputs.cache
+C:\Users\r1m1nrao\Documents\Training_Project\DOTNETCore\SampleCoreApp\obj\Debug\netcoreapp2.2\SampleCoreApp.AssemblyInfo.cs
+C:\Users\r1m1nrao\Documents\Training_Project\DOTNETCore\SampleCoreApp\obj\Debug\netcoreapp2.2\SampleCoreApp.dll
+C:\Users\r1m1nrao\Documents\Training_Project\DOTNETCore\SampleCoreApp\obj\Debug\netcoreapp2.2\SampleCoreApp.pdb

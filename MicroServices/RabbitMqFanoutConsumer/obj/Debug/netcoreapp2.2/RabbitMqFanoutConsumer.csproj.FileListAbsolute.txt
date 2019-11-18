@@ -1,0 +1,11 @@
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMqFanoutConsumer\bin\Debug\netcoreapp2.2\RabbitMqFanoutConsumer.deps.json
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMqFanoutConsumer\bin\Debug\netcoreapp2.2\RabbitMqFanoutConsumer.runtimeconfig.json
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMqFanoutConsumer\bin\Debug\netcoreapp2.2\RabbitMqFanoutConsumer.runtimeconfig.dev.json
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMqFanoutConsumer\bin\Debug\netcoreapp2.2\RabbitMqFanoutConsumer.dll
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMqFanoutConsumer\obj\Debug\netcoreapp2.2\RabbitMqFanoutConsumer.csproj.CoreCompileInputs.cache
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMqFanoutConsumer\obj\Debug\netcoreapp2.2\RabbitMqFanoutConsumer.AssemblyInfoInputs.cache
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMqFanoutConsumer\obj\Debug\netcoreapp2.2\RabbitMqFanoutConsumer.AssemblyInfo.cs
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMqFanoutConsumer\bin\Debug\netcoreapp2.2\RabbitMqFanoutConsumer.pdb
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMqFanoutConsumer\obj\Debug\netcoreapp2.2\RabbitMqFanoutConsumer.csprojAssemblyReference.cache
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMqFanoutConsumer\obj\Debug\netcoreapp2.2\RabbitMqFanoutConsumer.dll
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMqFanoutConsumer\obj\Debug\netcoreapp2.2\RabbitMqFanoutConsumer.pdb

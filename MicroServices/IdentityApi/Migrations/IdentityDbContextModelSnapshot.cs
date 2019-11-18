@@ -35,6 +35,8 @@ namespace IdentityApi.Migrations
 
                     b.Property<string>("Role");
 
+                    b.Property<string>("Status");
+
                     b.Property<string>("UserName")
                         .IsRequired();
 

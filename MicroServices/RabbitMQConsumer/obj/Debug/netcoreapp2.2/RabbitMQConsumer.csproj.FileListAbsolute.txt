@@ -1,0 +1,11 @@
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMQConsumer\bin\Debug\netcoreapp2.2\RabbitMQConsumer.deps.json
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMQConsumer\bin\Debug\netcoreapp2.2\RabbitMQConsumer.runtimeconfig.json
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMQConsumer\bin\Debug\netcoreapp2.2\RabbitMQConsumer.runtimeconfig.dev.json
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMQConsumer\bin\Debug\netcoreapp2.2\RabbitMQConsumer.dll
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMQConsumer\bin\Debug\netcoreapp2.2\RabbitMQConsumer.pdb
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMQConsumer\obj\Debug\netcoreapp2.2\RabbitMQConsumer.csprojAssemblyReference.cache
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMQConsumer\obj\Debug\netcoreapp2.2\RabbitMQConsumer.csproj.CoreCompileInputs.cache
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMQConsumer\obj\Debug\netcoreapp2.2\RabbitMQConsumer.AssemblyInfoInputs.cache
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMQConsumer\obj\Debug\netcoreapp2.2\RabbitMQConsumer.AssemblyInfo.cs
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMQConsumer\obj\Debug\netcoreapp2.2\RabbitMQConsumer.dll
+C:\Users\r1m1nrao\source\repos\MicroServices\RabbitMQConsumer\obj\Debug\netcoreapp2.2\RabbitMQConsumer.pdb

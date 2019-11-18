@@ -1,0 +1,201 @@
+// Used to connect to database
+// use eshop;
+db.categories.insertOne({
+    "id":3,
+    "name":"Laptops",
+    "Description": "Branded PC only"
+});
+
+db.categories.insertMany([
+    {id:4, name:"Fruits", Description:"Seasonable"},
+    {id:5, name:"Drikns", Description:"Cols"}
+])
+
+db.getCollectionNames();
+
+db.products.insertOne({
+    id:101,
+    name:"apple",
+    quntity:5,
+    price:10,
+    vendors:[
+        {id:20, name:"abc exporter", location:"mumbai", mobile:"123654789"},
+        {id:21, name:"ccd exporter", location:"pune", mobile:"1236547890", email:"ccd@gmail.com"}
+    ],
+    categories:[
+        {id:4, name:"Fruits"},
+        {id:5, name:"Vegetables"},
+        {id:6, name:"Vet"}
+    ]
+})
+
+db.categories.find();
+
+db.products.find({"name": "Apple"});
+
+db.products.find({"category.cname": "Fruisdfts"});
+
+db.products.findOne({"category.cname": "Fruits"});
+
+
+db.products.find({},
+{_id:0, name:1, "availability": 1, "price": 1})
+.sort({availability:1, price:-1})
+
+
+db.categories.find({id:3});
+
+db.categories.find({name:"Mobiles"});
+
+db.categories.find({}, {id:0})
+
+db.categories.find({}, {Description:1, id:0, _id:1})
+
+db.categories.find({}, { id:0, _id:1})
+
+db.categories.find({name:"Mobiles"}, { id:0, _id:1})
+
+db.products.deleteMany({id:101});
+
+
+//Query a fixed number of document
+db.products.count();
+
+db.products.find({}, {_id:0}).limit(4);
+
+db.products.find().skip(4).limit(4);
+
+//Update documents:
+//db.colletion.update(filter, updateData, options)
+
+db.products.find()
+
+db.products.find().sort({availability:1});
+
+// updating only first matching record
+db.products.update({availability:"Out of Stock"}, 
+    { 
+        $set:{availability:"Available to Sale", quntity:10 }
+    },
+    { multi:true }
+);
+
+db.products.find();
+
+// add new attribute in existing record
+db.products.update({quntity:10}, 
+    { 
+        $set:{ expiryDate:"2019-09-21" }
+    },
+    { multi:true }
+);
+
+// Update existing attribute with new value
+db.products.update({},
+{
+    $unset:{expiryDate:0},
+    $set:{ mfgDate:"2018-09-09" }
+},{multi:true});
+
+// Update existing attribute with new value using updateMany()
+db.products.updateMany({quntity:5},
+{
+    $inc:{quntity:4}
+})
+
+db.products.update({name:"Pepsi One"},
+{
+    $set:{quntity:4}
+},
+{upsert:true}
+)
+
+//How to use relational operators:
+db.products.find({
+    "category.cname":"Fruits"})
+
+db.products.find({
+    $and:[{"category.cname":"Fruits"}, {"price": {$gte:100}}]
+});
+
+db.products.find({
+    $or:[{"category.cname": "Fruits"}, {"category.cname":"Vegetables"}]
+});
+
+// Conditional Operator Way 1
+db.products.find({
+    $or:[{"category.cname": "Fruits"}, {"category.cname":"Vegetables"}],
+    $and:[{"price": {$lt:100}}]
+})
+// Conditional Operator Way 2
+db.products.find({
+    $and:[
+        {"price": {$lt:100}},
+        { $or:[{"category.cname": "Fruits"}, {"category.cname":"Vegetables"}]}
+        ]
+})
+
+db.products.update({name:"Pepsi One"},
+{
+    $set:{quntity:4}
+},
+{upsert:true}
+);
+
+
+// Array operations
+db.students.find();
+
+db.students.find({
+    marks:{$all:[40,50]}
+})
+
+db.students.find({
+    marks:{$elemMatch:{$gte:80}}
+});
+
+db.students.find({
+    marks:{$size:4}
+});
+
+// $slice[startingIndex, length]
+db.students.find({},
+{marks:{$slice:[1,3]}});
+
+
+db.students.update(
+{name:"Arti"},
+{$push:{marks:111}}
+)
+
+db.students.update(
+{name:"Arti"},
+{$addToSet:{marks:123}}
+);
+
+
+// iterate through an array of elements and push to array when use with $push
+// To avoid duplication we can use $addToSet
+db.students.update(
+{name:"Arti"},
+{$push:{marks:{$each:[25,30,35]}}}
+)
+
+//Mongo DB Aggregation:
+
+//1. Single purpose aggregation functions
+db.states.count();
+db.products.distinct("category.cname");
+
+//2. Aggregation pipeline
+db.students.aggregate([
+    {$match:{location:"Chennai"}},
+    {$unwind:"$marks"}, // similer to CROSS JOIN
+    //{$match:{marks:{$lte:70}}},
+    {$group:{_id:"$name", totalMark:{$sum:"$marks"}}},
+    {$project:{_id:0, totalMark:1, name:"$_id"}}
+])
+
+db.states.aggregate([
+    {$group:{_id:"$region", statescount:{$sum:1}, states:{$push:"$name"}}}
+]);

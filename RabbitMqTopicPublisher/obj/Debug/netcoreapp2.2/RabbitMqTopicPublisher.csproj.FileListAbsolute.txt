@@ -1,0 +1,11 @@
+C:\Users\r1m1nrao\source\repos\RabbitMqTopicPublisher\bin\Debug\netcoreapp2.2\RabbitMqTopicPublisher.deps.json
+C:\Users\r1m1nrao\source\repos\RabbitMqTopicPublisher\bin\Debug\netcoreapp2.2\RabbitMqTopicPublisher.runtimeconfig.json
+C:\Users\r1m1nrao\source\repos\RabbitMqTopicPublisher\bin\Debug\netcoreapp2.2\RabbitMqTopicPublisher.runtimeconfig.dev.json
+C:\Users\r1m1nrao\source\repos\RabbitMqTopicPublisher\bin\Debug\netcoreapp2.2\RabbitMqTopicPublisher.dll
+C:\Users\r1m1nrao\source\repos\RabbitMqTopicPublisher\obj\Debug\netcoreapp2.2\RabbitMqTopicPublisher.csprojAssemblyReference.cache
+C:\Users\r1m1nrao\source\repos\RabbitMqTopicPublisher\obj\Debug\netcoreapp2.2\RabbitMqTopicPublisher.csproj.CoreCompileInputs.cache
+C:\Users\r1m1nrao\source\repos\RabbitMqTopicPublisher\obj\Debug\netcoreapp2.2\RabbitMqTopicPublisher.AssemblyInfoInputs.cache
+C:\Users\r1m1nrao\source\repos\RabbitMqTopicPublisher\obj\Debug\netcoreapp2.2\RabbitMqTopicPublisher.AssemblyInfo.cs
+C:\Users\r1m1nrao\source\repos\RabbitMqTopicPublisher\bin\Debug\netcoreapp2.2\RabbitMqTopicPublisher.pdb
+C:\Users\r1m1nrao\source\repos\RabbitMqTopicPublisher\obj\Debug\netcoreapp2.2\RabbitMqTopicPublisher.dll
+C:\Users\r1m1nrao\source\repos\RabbitMqTopicPublisher\obj\Debug\netcoreapp2.2\RabbitMqTopicPublisher.pdb

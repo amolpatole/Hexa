@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: identity-deploy
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: identity
+  template:
+    metadata:
+      labels:
+        app: identity
+    spec:           
+      containers:
+      - name: identityapi-app
+        image: amolpatole/identityapi:latest        
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+        env:
+        - name: ConnectionStrings__IdentityConnectionString
+          value: "Server=tcp:amol-eshopserver.database.windows.net,1433;Initial Catalog=IdentityDBA;Persist Security Info=False;User ID=amol;Password=Welcome@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30"
+        - name: ConnectionStrings__StorageConnectionString
+          value: "DefaultEndpointsProtocol=https;AccountName=amolsstorageaccount;AccountKey=mfJz2eB/7q/o/5c14KlRg9JKISF0JX93YtS3fqPRz84KLRgqH9Qjgm90oeiGmYCrC8MLjFdA0+XUxE3IShYSMg==;EndpointSuffix=core.windows.net"

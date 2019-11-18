@@ -1,0 +1,11 @@
+C:\Users\r1m1nrao\source\repos\RabbitMqAdvancedPublisher\bin\Debug\netcoreapp2.2\RabbitMqAdvancedPublisher.deps.json
+C:\Users\r1m1nrao\source\repos\RabbitMqAdvancedPublisher\bin\Debug\netcoreapp2.2\RabbitMqAdvancedPublisher.runtimeconfig.json
+C:\Users\r1m1nrao\source\repos\RabbitMqAdvancedPublisher\bin\Debug\netcoreapp2.2\RabbitMqAdvancedPublisher.runtimeconfig.dev.json
+C:\Users\r1m1nrao\source\repos\RabbitMqAdvancedPublisher\bin\Debug\netcoreapp2.2\RabbitMqAdvancedPublisher.dll
+C:\Users\r1m1nrao\source\repos\RabbitMqAdvancedPublisher\obj\Debug\netcoreapp2.2\RabbitMqAdvancedPublisher.csprojAssemblyReference.cache
+C:\Users\r1m1nrao\source\repos\RabbitMqAdvancedPublisher\obj\Debug\netcoreapp2.2\RabbitMqAdvancedPublisher.csproj.CoreCompileInputs.cache
+C:\Users\r1m1nrao\source\repos\RabbitMqAdvancedPublisher\obj\Debug\netcoreapp2.2\RabbitMqAdvancedPublisher.AssemblyInfoInputs.cache
+C:\Users\r1m1nrao\source\repos\RabbitMqAdvancedPublisher\obj\Debug\netcoreapp2.2\RabbitMqAdvancedPublisher.AssemblyInfo.cs
+C:\Users\r1m1nrao\source\repos\RabbitMqAdvancedPublisher\bin\Debug\netcoreapp2.2\RabbitMqAdvancedPublisher.pdb
+C:\Users\r1m1nrao\source\repos\RabbitMqAdvancedPublisher\obj\Debug\netcoreapp2.2\RabbitMqAdvancedPublisher.dll
+C:\Users\r1m1nrao\source\repos\RabbitMqAdvancedPublisher\obj\Debug\netcoreapp2.2\RabbitMqAdvancedPublisher.pdb

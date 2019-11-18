@@ -1,0 +1,51 @@
+# Login to Azure
+az login
+
+# Create a resource group
+az group create -n K8SGroupNew -l Southeastasia
+
+# Get supported Kubernetes latest versions
+az aks get-versions -l southeastasia --query "orchestrators[-1].orchestratorVersion" -o tsv
+
+# Get supported Kubernetes all versions available
+az aks get-versions -l southeastasia -o table
+
+# If not register Microsoft.Network
+az provider register --namespace Microsoft.Network
+
+# Select appropritate version of Kubernetes
+# We select 1.13.12 
+# To Create a Cluster
+az aks create -g K8SGroupNew -n ktscluster -l southeastasia --enable-addons monitoring --kubernetes-version 1.13.12 --generate-ssh-keys --node-count 2 --node-vm-size Standard_D1
+
+# Download the authentication token for cluster
+az aks get-credentials -n ktscluster -g K8SGroupNew
+
+# To deploye the yaml
+kubectl apply -f ./catalogapi-deploy.yaml
+kubectl apply -f ./identityapi-deploy.yaml
+
+# To delete deployment
+kubectl delete deploye <deployment-name>
+
+# Instead of delete and redeploy, simply replate the existing 
+kubectl replace -f "catalogapi-deploy.yaml"
+
+# To describe the pod information
+kubectl describe pod <pod-name>
+
+# To view the pod console
+kubectl log <pod-name>
+
+# To create kubernetes service
+kubectl apply –f “catalogapi-service.yaml”
+
+# To view the list of services
+kubectl get svc
+
+# Delete the service
+kubectl delete svc <service-name>
+
+# To browse 
+az aks browse –n <cluster-name> -g <group-name>
+az aks browse –n ktscluster -g K8SGroupNew

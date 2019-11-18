@@ -70,16 +70,30 @@ namespace IdentityApi
             app.UseSwagger();
 
             // To show Swagger UI
-            if (env.IsDevelopment())
-            {
+            //if (env.IsDevelopment())
+            //{
                 app.UseSwaggerUI(config =>
                 {
                     config.SwaggerEndpoint("/swagger/v1/swagger.json", "Identity API");
                     config.RoutePrefix = "";
                 });
-            }
+            //}
+
+            InitializeDatabase(app);
 
             app.UseMvc();
+        }
+
+        // Run the update migration from here while running on production
+        private void InitializeDatabase(IApplicationBuilder app)
+        {
+            using(var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                using (var dbContext = serviceScope.ServiceProvider.GetRequiredService<IdentityDbContext>())
+                {
+                    dbContext.Database.Migrate();
+                }
+            }
         }
     }
 }

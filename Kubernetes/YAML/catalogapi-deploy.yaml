@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: catalog-deploy
+spec:
+  replicas: 2 
+  selector:
+    matchLabels:
+      app: catalog
+  template:
+    metadata:
+      labels:
+        app: catalog
+    spec:           
+      containers:
+      - name: catalogapi-app
+        image: amolpatole/catalogapi:latest        
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+        env:
+        - name: MongoSettings__ConnectionString
+          value: "mongodb://amol-cosmosmongo-account:PZvBL3MCsXSRcVIKCmfsxVtKhGv9PZHSavOPISizaaESEFxzqmZe9xOqvuwkqRdPjcU0bC2CK0r17f9J6ob0uQ==@amol-cosmosmongo-account.documents.azure.com:10255/?ssl=true&replicaSet=globaldb&retryWrites=false"
+        - name: MongoSettings__Database
+          value: "CatalogDB"
+        - name: ConnectionStrings__StorageConnection
+          value: "DefaultEndpointsProtocol=https;AccountName=amolsstorageaccount;AccountKey=mfJz2eB/7q/o/5c14KlRg9JKISF0JX93YtS3fqPRz84KLRgqH9Qjgm90oeiGmYCrC8MLjFdA0+XUxE3IShYSMg==;EndpointSuffix=core.windows.net"
+        - name: ConnectionStrings__TableConnection
+          value: "DefaultEndpointsProtocol=https;AccountName=amol-cosmos-azuretable-account;AccountKey=FRYXncdHl6aUQKlYKRfBQfo6tvhTRNZRDy8odTxmoNAKMztLobSSCGEPQyElgR2TGeS6MB6U3oInPjjtgsPm7w==;TableEndpoint=https://amol-cosmos-azuretable-account.table.cosmos.azure.com:443/"

@@ -1,0 +1,11 @@
+FROM nginx:latest
+
+LABEL author "amol patole"
+LABEL company "Hexa"
+LABEL version "1.0"
+
+WORKDIR /urs/share/nginx/html/
+
+COPY ./ ./
+
+EXPOSE 80
